@@ -14,6 +14,7 @@ let transporter = nodemailer.createTransport({
 });
 
 const sendMail = (transport) => {
+    console.log(auth)
     transporter.sendMail(transport, (error, info) => {
         if (error) {
             console.log(error)
