@@ -9,13 +9,9 @@ const auth = {
 }
 
 let transporter = nodemailer.createTransport({
-    service: 'hotmail',
+    service: 'gmail',
     auth
 });
-
-const email = "aishaarman1995@gmail.com"
-const name = "Aisha"
-
 
 const sendMail = (transport) => {
     transporter.sendMail(transport, (error, info) => {
